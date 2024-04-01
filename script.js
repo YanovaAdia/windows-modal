@@ -21,7 +21,7 @@ btnClose.addEventListener("click", hideModal);
 modal.addEventListener("click", hideModal);
 
 document.addEventListener("keydown", function (e) {
-  if (e === "Escape" && !modal.classList.contains("hidden")) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     hideModal();
   }
 });
